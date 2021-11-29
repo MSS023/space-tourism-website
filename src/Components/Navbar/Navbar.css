@@ -1,0 +1,56 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 40px;
+    left: 55px;
+    width: calc(100% - 55px);
+    text-align: left;
+    height: 96px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.Right {
+    z-index: 1;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(30px);
+}
+
+.number {
+    font-weight: 700;
+}
+
+.links {
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px white solid;
+}
+
+hr {
+    position: absolute;
+    left: 100px;
+    border-top: 1px white solid;
+    width: 35%;
+    z-index: 2;
+}
