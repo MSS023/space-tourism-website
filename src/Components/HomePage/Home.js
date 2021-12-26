@@ -1,7 +1,9 @@
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
+    const navigate=useNavigate();
     return <div className="Home">
         <section className="top">
             <Navbar active={0} />
@@ -15,7 +17,7 @@ function Home() {
                 </div>
             </div>
             <div className="right">
-                <button className="Explore">EXPLORE</button>
+                <button className="Explore" onClick={() => {navigate("/Destination")}}>EXPLORE</button>
             </div>
         </section>
     </div>

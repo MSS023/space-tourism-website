@@ -25,7 +25,7 @@ function Crew(props) {
                 </div>
             </div>
             <div className="crew-right">
-                <img className="crew-image" src={data.crew[index].images.webp} alt="Anousheh Ansari" />
+                <img className="crew-image" src={data.crew[index].images.webp} alt={data.crew[index].name} />
             </div>
         </section>
     </div>

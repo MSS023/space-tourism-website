@@ -12,7 +12,7 @@ function Destination(props) {
         <section className="bottom">
             <div className="left">
                 <h1 className="title"><span>01</span> PICK YOUR DESTINATION</h1>
-                <img className="destination-image" src={data.destinations[destination].images.webp} alt="Moon" />
+                <img className="destination-image" src={data.destinations[destination].images.webp} alt={data.destinations[destination].name} />
             </div>
             <div className="right">
                 <div className="destination-options">
