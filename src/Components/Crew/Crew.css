@@ -29,7 +29,7 @@
 .title {
     position: relative;
     display: inline;
-    left: 166.5px;
+    left: 23.125%;
     font-size: 28px;
     font-weight: 400;
     margin: 0;
@@ -46,7 +46,7 @@
 
 .crew-details {
     position: relative;
-    left: 165.5px;
+    left: 23.125%;
     top: 154px;
 }
 
@@ -99,8 +99,18 @@
     margin-right: 24px;
 }
 
+.carousel-button:hover {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
 .active-button {
     background: #FFFFFF;
+    opacity: 1;
+}
+
+.active-button:hover {
     opacity: 1;
 }
 

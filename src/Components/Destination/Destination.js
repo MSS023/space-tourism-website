@@ -6,15 +6,15 @@ import {useState} from 'react';
 function Destination(props) {
     const [destination,setDestination] = useState(0);
     return <div className="Destination">
-        <section className="top">
+        <section className="destination-top">
             <Navbar active={1} />
         </section>
-        <section className="bottom">
-            <div className="left">
-                <h1 className="title"><span>01</span> PICK YOUR DESTINATION</h1>
+        <section className="destination-bottom">
+            <div className="destination-left">
+                <h1 className="destination-title"><span>01</span> PICK YOUR DESTINATION</h1>
                 <img className="destination-image" src={data.destinations[destination].images.webp} alt={data.destinations[destination].name} />
             </div>
-            <div className="right">
+            <div className="destination-right">
                 <div className="destination-options">
                     <button className={"destination-option" + (destination===0?" active-destination":"")} onClick={() => {setDestination(0)}} >MOON</button>
                     <button className={"destination-option" + (destination===1?" active-destination":"")} onClick={() => {setDestination(1)}} >MARS</button>

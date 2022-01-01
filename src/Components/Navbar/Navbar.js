@@ -7,7 +7,7 @@ function Navbar(props) {
     const {active}=props;
     return <div className="Navbar">
         <div>
-            <img className="Logo" src={logo} alt="Logo" />
+            <img className="Logo" src={logo} alt="Logo" onClick={()=>{navigate("/")}}/>
         </div>
         <hr className="rule" />
         <div className="Right">

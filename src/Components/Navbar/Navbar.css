@@ -3,8 +3,8 @@
     flex-direction: row;
     position: relative;
     top: 40px;
-    left: 55px;
-    width: calc(100% - 55px);
+    left: 3.82%;
+    width: 96.2%;
     text-align: left;
     height: 96px;
     align-items: center;
@@ -16,6 +16,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    cursor: pointer;
 }
 
 .Right {
@@ -43,13 +44,24 @@
     cursor: pointer;
 }
 
+.links:hover {
+    border-bottom: 2px #ffffff solid;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
 .active {
     border-bottom: 2px white solid;
 }
 
+.active:hover {
+    border-bottom: 2px white solid;
+    opacity: 1;
+}
+
 .rule {
     position: absolute;
-    left: 100px;
+    left: 6.94%;
     border-top: 1px white solid;
     width: 35%;
     z-index: 2;

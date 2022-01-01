@@ -6,40 +6,40 @@
     color: white;
 }
 
-.top {
+.home-top {
     height: 30%;
 }
 
-.bottom {
+.home-bottom {
     height: 70%;
     display: flex;
     flex-direction: row;
 }
 
-.left {
+.home-left {
     width: 50%;
 }
 
-.Text {
+.home-text {
     width: 450px;
     top: 60px;
-    left: 165px;
+    left: 22.9%;
     position: relative;
     text-align: left;
 }
 
-.first {
+.home-first {
     font-size: 28px;
     margin: 0;
 }
 
-.second {
+.home-second {
     font-size: 220px;
     margin: 0;
     font-weight: 300;
 }
 
-.third {
+.home-third {
     font-size: 20px;
     margin: 0;
     line-height: 32px;
@@ -47,11 +47,11 @@
     text-align: justify;
 }
 
-.right {
+.home-right {
     width: 50%;
 }
 
-.Explore {
+.home-explore {
     position: relative;
     top: 200px;
     height: 274px;

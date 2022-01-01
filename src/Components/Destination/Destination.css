@@ -8,11 +8,11 @@
     color: white;
 }
 
-.top {
+.destination-top {
     height: auto;
 }
 
-.bottom {
+.destination-bottom {
     width: 100%;
     height: 70%;
     display: flex;
@@ -21,14 +21,15 @@
     top: 212px;
 }
 
-.left {
+.destination-left {
     text-align: left;
+    width: 50%;
 }
 
-.title {
+.destination-title {
     position: relative;
     display: inline;
-    left: 166.5px;
+    left: 23.125%;
     font-size: 28px;
     font-weight: 400;
     margin: 0;
@@ -36,7 +37,7 @@
     letter-spacing: 4.725px;
 }
 
-.title > span {
+.destination-title > span {
     font-weight: 700;
     color: #FFFFFF;
     mix-blend-mode: normal;
@@ -45,19 +46,19 @@
 
 .destination-image {
     position: relative;
-    height: 445px;
-    width: 445px;
-    left: 230px;
+    height: auto;
+    width: 61.8%;
+    left: 31.94%;
     top: 97px;
 }
 
-.right {
+.destination-right {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 98px;
     margin: 0 auto;
-    width: 30.9%;
+    width: 445px;
 }
 
 .destination-options {
@@ -76,9 +77,19 @@
     margin: 0 25px 0 0;
 }
 
+.destination-option:hover {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-bottom: 3px solid #ffffff;
+}
+
 .active-destination {
     color: #FFFFFF;
     border-bottom: 3px solid #ffffff;
+}
+
+.active-destination:hover {
+    opacity: 1;
 }
 
 .destination-name {
