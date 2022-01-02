@@ -6,12 +6,12 @@ import {useState} from 'react';
 function Crew(props) {
     const [index,setIndex]=useState(0);
     return <div className="Crew">
-        <section className="top">
+        <section className="crew-top">
             <Navbar active={2} />
         </section>
-        <section className="bottom">
+        <section className="crew-bottom">
             <div className="crew-left">
-                <h1 className="title"><span>02</span> MEET YOUR CREW</h1>
+                <h1 className="crew-title"><span>02</span> MEET YOUR CREW</h1>
                 <div className="crew-details">
                     <div className="crew-role">{data.crew[index].role}</div>
                     <div className="crew-name">{data.crew[index].name}</div>

@@ -1,17 +1,37 @@
 import './Technology.css';
 import Navbar from "../Navbar/Navbar";
 import data from '../../Data/data.json';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
 function Technology(props) {
+    function useWindowSize() {
+        const [windowSize, setWindowSize] = useState({
+            width: undefined,
+            height: undefined,
+        });
+        useEffect(() => {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+        return windowSize;
+    }
+    const size=useWindowSize();
+    const width=size.width;
     const [index,setIndex]=useState(0);
     return <div className="Technology">
         <section className="technology-top">
             <Navbar active={3} />
         </section>
+        <h1 className="technology-title"><span>03</span> SPACE LAUNCH 101</h1>
         <section className="technology-bottom">
             <div className="technology-left">
-                <h1 className="technology-title"><span>03</span> SPACE LAUNCH 101</h1>
                 <div className="technology-container">
                     <div className="technology-buttons">
                         <button className={"technology-button" + (index===0?" active-technology":"")} onClick={() => {setIndex(0)}}>
@@ -39,7 +59,7 @@ function Technology(props) {
                 </div>
             </div>
             <div className="technology-right">
-                <img className="technology-image" src={data.technology[index].images.portrait} alt="technology" />
+                <img className="technology-image" src={width>1225?data.technology[index].images.portrait:data.technology[index].images.landscape} alt="technology" />
             </div>
         </section>
     </div>

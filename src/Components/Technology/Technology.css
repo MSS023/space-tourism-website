@@ -2,37 +2,40 @@
 
 .Technology {
     width: 100%;
+    min-height: 100vh;
     height: 900px;
     background: url("../../Images/background-technology-desktop.jpg");
     background-size: cover;
     color: white;
+    text-align: left;
 }
 
 .technology-top {
-    height: auto;
+    height: 136px;
+    margin-bottom: 76px;
+}
+
+.technology-title {
+    position: relative;
+    display: inline;
+    left: 11.5625%;
+    text-align: start;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    margin-top: 76px;
 }
 
 .technology-bottom {
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 212px;
 }
 
 .technology-left {
     text-align: left;
-}
-
-.technology-title {
-    position: relative;
-    display: inline;
-    left: 23.125%;
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0;
-    line-height: 34px;
-    letter-spacing: 4.725px;
+    width: 50%;
 }
 
 .technology-title > span {
@@ -129,13 +132,95 @@
 }
 
 .technology-right {
-    position: absolute;
-    top: 60px;
     height: auto;
-    width: 35.76vw;
-    right: 0;
+    width: 50%;
+    text-align: right;
+    margin-top: 25px;
 }
 
 .technology-image {
     width: 35.76vw;
+}
+
+@media screen and (max-width: 1226px) {
+    .Technology {
+        height: 100%;
+    }
+
+    .technology-top {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .technology-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .technology-left {
+        width: 100%;
+    }
+
+    .technology-container {
+        flex-direction: column;
+        margin: 56px auto 97px;
+        text-align: center;
+    }
+
+    .technology-buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .technology-button {
+        width: 58px;
+        height: 58px;
+    }
+
+    .technology-description {
+        margin: 44px auto auto;
+    }
+
+    .technology-terminology {
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #D0D6F9;
+    }
+
+    .technology-name {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+
+    .technology-desc {
+        margin-top: 16px;
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #D0D6F9;
+    }
+
+    .technology-right {
+        width: 100%;
+    }
+
+    .technology-image {
+        margin-top: 60px;
+        width: 100vw;
+    }
 }

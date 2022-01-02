@@ -66,3 +66,21 @@
     width: 35%;
     z-index: 2;
 }
+
+@media screen and (max-width: 1226px) {
+    .Navbar {
+        top: 0;
+    }
+
+    .links {
+        font-size: 14px;
+    }
+
+    .number {
+        display: none;
+    }
+    
+    .rule {
+        display: none;
+    }
+}
