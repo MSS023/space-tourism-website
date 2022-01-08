@@ -1,27 +1,10 @@
 import './Technology.css';
 import Navbar from "../Navbar/Navbar";
 import data from '../../Data/data.json';
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
+import useWindowSize from '../../Hooks/WindowSizeHook';
 
 function Technology(props) {
-    function useWindowSize() {
-        const [windowSize, setWindowSize] = useState({
-            width: undefined,
-            height: undefined,
-        });
-        useEffect(() => {
-            function handleResize() {
-                setWindowSize({
-                    width: window.innerWidth,
-                    height: window.innerHeight,
-                });
-            }
-            window.addEventListener("resize", handleResize);
-            handleResize();
-            return () => window.removeEventListener("resize", handleResize);
-        }, []);
-        return windowSize;
-    }
     const size=useWindowSize();
     const width=size.width;
     const [index,setIndex]=useState(0);
@@ -47,7 +30,7 @@ function Technology(props) {
                 
                     <div className="technology-description">
                         <div className="technology-terminology">
-                            THE TERMINOLOGY
+                            THE TERMINOLOGY...
                         </div>
                         <h1 className="technology-name">
                             {data.technology[index].name}

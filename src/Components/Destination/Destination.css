@@ -116,7 +116,6 @@
     line-height: 32px;
     text-align: left;
     padding-bottom: 54px;
-    border-bottom: 1px solid #ffff;
     color: #D0D6F9;
     height: 128px;
 }
@@ -168,6 +167,7 @@
         flex-direction: column;
         position: static;
         padding: 40px 0 62px;
+        margin-top: 0;
     }
 
     .destination-left {
@@ -193,6 +193,11 @@
         position: static;
         margin: 0;
         width: 100%;
+    }
+
+    .destination-right > hr {
+        width: 74.6%;
+        margin: 0 auto 28px;
     }
 
     .destination-options {
@@ -225,5 +230,74 @@
 
     .details-column > .details-heading, .details-column > .details-detail {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Destination {
+        background: url('../../Images/background-destination-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .destination-bottom {
+        padding-top: 24px;
+    }
+
+    hr {
+        margin-bottom: 32px;
+    }
+
+    .destination-title {
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+    }
+
+    .destination-image {
+        height: 170px;
+        width: 170px;
+        margin: 32px auto 26px;
+    }
+
+    .destination-name {
+        margin-top: 20px;
+    }
+
+    .destination-option {
+        font-size: 14px;
+    }
+
+    .destination-name > h1 {
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    .destination-details {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .destination-desc {
+        padding: 0;
+    }
+
+    .destination-desc > p {
+        font-family: Barlow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 32px;
     }
 }
