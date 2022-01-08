@@ -242,6 +242,8 @@
 
     .destination-bottom {
         padding-top: 24px;
+        padding-bottom: 0;
+        margin-bottom: 58px;
     }
 
     hr {
