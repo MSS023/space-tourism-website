@@ -238,12 +238,12 @@
         background: url('../../Images/background-destination-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 58px;
     }
 
     .destination-bottom {
         padding-top: 24px;
         padding-bottom: 0;
-        margin-bottom: 58px;
     }
 
     hr {
