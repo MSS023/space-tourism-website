@@ -152,6 +152,10 @@
         margin-bottom: 40px;
     }
 
+    .technology-title {
+        left: 5.01vw;
+    }
+
     .technology-bottom {
         display: flex;
         flex-direction: column-reverse;
