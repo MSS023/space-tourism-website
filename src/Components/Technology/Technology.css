@@ -304,4 +304,16 @@
         margin-top: 0;
         height: 170px;
     }
+
+    .technology-button {
+        width: 40px;
+        height: 40px;
+        font-family: Bellefair;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
 }
