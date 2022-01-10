@@ -36,7 +36,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Desktop-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Bootstrap](https://getbootstrap.com/) - Bootstrap
 - [Styled Components](https://styled-components.com/) - For styles
